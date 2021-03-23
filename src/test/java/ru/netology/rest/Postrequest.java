@@ -21,7 +21,7 @@ class PostRequest {
         .then()
                 .statusCode(200)
                // .header("Host","postman-echo.com")
-                .body("data", equalTo("status"))
+                .body("data", equalTo("data"))
         ;
     }
 }
