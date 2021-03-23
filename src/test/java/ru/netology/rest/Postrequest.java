@@ -13,7 +13,7 @@ class PostRequest {
 // Предусловия
         given()
                 .baseUri("https://postman-echo.com")
-                .body("status") // отправляемые данные (заголовки и query можно выставлять аналогично)
+                .body("BUILD SUCCESSFUL") // отправляемые данные (заголовки и query можно выставлять аналогично)
 // Выполняемые действия
         .when()
                 .post("/post")
@@ -21,7 +21,7 @@ class PostRequest {
         .then()
                 .statusCode(200)
                // .header("Host","postman-echo.com")
-                .body("data", equalTo("data"))
+                .body("data", equalTo("BUILD SUCCESSFUL"))
         ;
     }
 }
